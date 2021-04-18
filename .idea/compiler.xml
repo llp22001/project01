@@ -7,12 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="javaweb" />
+        <module name="mavendemo" />
         <module name="javaweb01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="javaweb" target="1.8" />
       <module name="javaweb01" target="1.8" />
+      <module name="mavendemo" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mavendemo" options="-parameters" />
+    </option>
   </component>
 </project>
